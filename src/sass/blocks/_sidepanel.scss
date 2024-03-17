@@ -14,11 +14,12 @@
   }
   &__link {
     display: block;
-    img {
-      width: 30px;
-      transition: 0.2s all;
-      &:hover {
-        transform: scale(1.2);
+    width: 30px;
+    transition: 0.2s all;
+    &:hover {
+      transform: scale(1.2);
+      svg path {
+        fill: $main-color;
       }
     }
   }
