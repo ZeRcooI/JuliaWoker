@@ -22,6 +22,11 @@
   margin: 25px auto 0 auto;
 }
 
+.rotate-360 {
+  transform: rotateY(360deg);
+  transition: all 2.5s;
+}
+
 @import "blocks/promo";
 @import "blocks/title";
 @import "blocks/button";
