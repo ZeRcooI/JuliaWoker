@@ -2,6 +2,7 @@
   padding-top: 60px;
   &__wrapper {
     display: grid;
+    padding: 0 75px;
     grid-template-columns: repeat(2, minmax(370px, auto));
     grid-template-rows: repeat(2, minmax(45px, auto));
     grid-auto-rows: minmax(45px, auto);
@@ -9,6 +10,7 @@
     row-gap: 15px;
   }
   &__item {
+    position: relative;
     display: grid;
     grid-template-rows: 21px 18px;
     grid-template-columns: minmax(55px, auto) minmax(81px, auto);
@@ -20,6 +22,16 @@
     &-descr {
       grid-column: 1/3;
       font-size: 12px;
+    }
+    &-title:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: #aa32db;
+      border-radius: 100%;
+      left: -25px;
+      top: 2px;
     }
   }
 }

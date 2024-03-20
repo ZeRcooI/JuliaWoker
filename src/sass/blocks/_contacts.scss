@@ -1,0 +1,91 @@
+.contacts {
+  padding: 120px 0 90px 0;
+  &__wrapper {
+    padding: 0 35px 0 52px;
+    display: grid;
+    grid-template-columns: 400px 585px;
+    justify-content: space-between;
+    align-items: center;
+    &__photo {
+      grid-row: 1/3;
+      img {
+        border-radius: 7px;
+        width: 100%;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.1);
+          border: 5px solid #000;
+        }
+      }
+    }
+  }
+  &__descr {
+    padding-top: 6px;
+    .divider {
+      margin: 0;
+    }
+  }
+  &__title {
+    position: relative;
+    padding: 1px 0 0 12px;
+    @include before_circle;
+  }
+  &__text,
+  &__social {
+    margin-top: 20px;
+  }
+  &__link {
+    margin-right: 25px;
+    img {
+      max-width: 30px;
+      min-height: 30px;
+    }
+  }
+  &__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template: 45px 120px 45px / repeat(2, 280px);
+    justify-content: space-between;
+    row-gap: 27px;
+    label {
+      margin: 0;
+      position: absolute;
+      height: 18px;
+      padding: 0 8px;
+      background-color: #fff;
+      font-size: 12px;
+      display: block;
+      top: -9px;
+      left: 12px;
+    }
+  }
+  &__input {
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      font-size: 12px;
+    }
+  }
+  &__textarea {
+    position: relative;
+    grid-column: 1/3;
+    textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+      padding: 20px;
+      font-size: 12px;
+    }
+  }
+  &__btn {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    &:hover {
+      background-color: #028b9b;
+      color: #000;
+    }
+  }
+}
