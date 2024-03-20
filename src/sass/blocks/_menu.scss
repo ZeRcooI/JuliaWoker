@@ -10,9 +10,9 @@
   cursor: pointer;
   span {
     display: block;
-    width: 30px;
+    width: 40px;
     height: 3px;
-    background-color: #151812;
+    background-color: #fff;
   }
   span.long {
     width: 36px;
@@ -37,7 +37,7 @@
   &__block {
     position: relative;
     width: 345px;
-    background-color: $main-color;
+    background-color: #aa32db;
     height: 100%;
     z-index: 10;
     padding-top: 140px;

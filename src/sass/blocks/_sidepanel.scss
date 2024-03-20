@@ -16,15 +16,18 @@
     display: block;
     width: 30px;
     transition: 0.2s all;
+    svg path {
+      fill: $main-color;
+    }
     &:hover {
       transform: scale(1.2);
       svg path {
-        fill: $main-color;
+        fill: #fff;
       }
     }
   }
   &__divider {
-    background-color: #000;
+    background-color: $main-color;
     width: 200px;
     height: 2px;
   }
@@ -32,5 +35,6 @@
     font-size: 20px;
     font-weight: bold;
     width: 180px;
+    color: $main-color;
   }
 }
