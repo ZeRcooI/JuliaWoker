@@ -3,8 +3,8 @@
   &__items {
     margin-top: 60px;
     padding: 0 10px;
-    display: grid;
     grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+    display: grid;
     grid-auto-rows: minmax(270px, auto);
     gap: 13px;
   }
