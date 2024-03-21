@@ -681,12 +681,12 @@
 
             <form class="contacts__form" action="#">
               <div class="contacts__input">
-                <input id="name" name="name" type="text" />
+                <input id="name" name="name" type="text" required />
                 <label for="name">Ваше имя</label>
               </div>
 
               <div class="contacts__input">
-                <input id="email" name="email" type="email" />
+                <input id="email" name="email" type="email" required />
                 <label for="email">Ваша почта</label>
               </div>
 
@@ -695,8 +695,17 @@
                 <label for="text">Ваше сообщение</label>
               </div>
 
-              <div>
+              <div class="contacts__triggers">
                 <button class="contacts__btn btn">Отправить сообщение</button>
+                <div class="contacts__policy">
+                  <input type="checkbox" required />
+                  <span
+                    >Я согласен(а) с
+                    <a href="/policy.html" target="_blank"
+                      >политикой конфиденциальности</a
+                    ></span
+                  >
+                </div>
               </div>
             </form>
           </div>

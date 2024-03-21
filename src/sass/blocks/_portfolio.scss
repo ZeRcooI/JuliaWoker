@@ -5,7 +5,7 @@
     display: grid;
     grid-template: repeat(2, 280px) / repeat(4, 280px);
     grid-auto-rows: 280px;
-    gap: 5px;
+    gap: 20px;
     justify-content: center;
     .vertical {
       grid-row: 1/3;
