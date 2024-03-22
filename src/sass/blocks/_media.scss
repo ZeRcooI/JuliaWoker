@@ -55,6 +55,33 @@
       column-gap: 45px;
     }
   }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: space-around;
+      row-gap: 35px;
+      .horizontal,
+      .vertical {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+  }
+  .contacts {
+    &__wrapper {
+      padding: 0 20px 0 20px;
+      grid-template-columns: 350px 500px;
+    }
+    &__photo {
+      img {
+        width: 350px;
+      }
+    }
+    &__form {
+      grid-template: 45px 120px 45px/198px 250px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -102,6 +129,38 @@
     &__ratings {
       grid-template: repeat(2, minmax(70px, auto)) / repeat(2, 330px);
       column-gap: 60px;
+    }
+  }
+  .pricelist {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 330px);
+      padding: 50px 0 0 0;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 300px 400px;
+      padding: 0;
+      justify-items: center;
+    }
+    &__photo {
+      img {
+        width: 300px;
+      }
+    }
+    &__form {
+      grid-template: 45px 120px 45px / 335px;
+    }
+    &__textarea {
+      grid-column: 1;
+    }
+    &__triggers {
+      grid-column: 1;
+      column-gap: 15px;
+    }
+    .btn {
+      padding: 6px 13px;
+      font-size: 11px;
     }
   }
 }
@@ -199,6 +258,38 @@
       column-gap: 40px;
     }
   }
+  .pricelist {
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+  .contacts {
+    padding-top: 80px;
+    &__wrapper {
+      grid-template-columns: 540px;
+    }
+    &__photo {
+      display: none;
+    }
+    &__title {
+      padding: 0;
+      text-align: center;
+      &::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__text {
+      text-align: center;
+    }
+    &__social {
+      display: flex;
+      justify-content: center;
+    }
+    .divider {
+      margin: 15px auto 0 auto;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -258,6 +349,37 @@
     &__ratings {
       margin-top: 70px;
       grid-template: repeat(2, minmax(60px, auto)) / 260px;
+    }
+  }
+  .portfolio {
+    padding-top: 70px;
+  }
+  .pricelist {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 250px);
+    }
+  }
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__wrapper {
+      grid-template-columns: 300px;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__social {
+      display: flex;
+      justify-content: center;
+    }
+    .divider {
+      margin: 10px auto 0 auto;
+    }
+    &__form {
+      grid-template: 45px 45px 120px / 300px;
     }
   }
 }

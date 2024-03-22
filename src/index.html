@@ -224,7 +224,14 @@
       <div class="container">
         <div class="about__wrapper">
           <div class="about__photo">
-            <img src="img/main_photo.jpg" alt="main_photo" />
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="img/main_photo-min.jpg"
+              />
+              <source media="(min-width: 577px)" srcset="img/main_photo.jpg" />
+              <img src="img/main_photo.jpg" alt="photo" />
+            </picture>
           </div>
           <div class="about__descr">
             <h2 class="about__title title title_fz16">Про меня</h2>
@@ -552,7 +559,7 @@
       </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Портфолио</h2>
         <div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -603,9 +610,9 @@
           </a>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="pricelist">
+    <section class="pricelist">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
         <div class="divider"></div>
@@ -645,9 +652,9 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__photo">
@@ -711,7 +718,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
   </body>
