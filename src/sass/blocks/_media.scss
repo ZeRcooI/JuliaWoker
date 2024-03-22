@@ -364,6 +364,7 @@
     padding-bottom: 40px;
     &__wrapper {
       grid-template-columns: 300px;
+      justify-content: center;
     }
     &__subtitle {
       text-align: center;
